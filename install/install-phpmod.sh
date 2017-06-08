@@ -49,13 +49,13 @@ mysqlnd_ms.config_file=/usr/local/php/etc/mysqlnd_ms_plugin.in
     "wps_pay": {
         "master": {
             "master_0": {
-                "host": "172.16.8.53",
+                "host": "10.20.8.53",
                 "port": "3306"
             }
         },
         "slave": {
             "slave_0": {
-                "host": "172.16.8.54",
+                "host": "10.20.8.54",
                 "port": "3306"
             }
         },
