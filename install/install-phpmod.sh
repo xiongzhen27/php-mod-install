@@ -1,6 +1,6 @@
 #!/bin/bash
 [php模块安装] php源码插件扩展
-[mcrypt.so]  mcrypt 库的接口模块   120.92.56.120 
+[mcrypt.so]  mcrypt 库的接口模块   
 本扩展是 mcrypt 库提供了对多种块算法的支持， 包括：DES，TripleDES，Blowfish （默认）， 3-WAY，SAFER-SK64，SAFER-SK128，TWOFISH，TEA，RC2 以及 GOST，并且支持 CBC，OFB，CFB 和 ECB 密码模式。 甚至，它还支持诸如 RC6 和 IDEA 这两种“非免费”的算法。 默认情况下，CFB/OFB 是 8 比特的。    来源： http://php.net/manual/zh/intro.mcrypt.php
 
 cd /root/deploy/php-5.6.21/ext/mcrypt/
@@ -35,7 +35,7 @@ cd mysqlnd_ms-1.5.2
 ./configure --with-php-config=/usr/local/php/bin/php-config 
 make
 make install
-[root@zw-172-16-9-127 mysqlnd_ms-1.5.2]# cat /usr/local/php/etc/php.ini |grep -v ';'|grep extension
+[root@127.0.0.1 mysqlnd_ms-1.5.2]# cat /usr/local/php/etc/php.ini |grep -v ';'|grep extension
 extension=mysqlnd_ms.so
 -------------------------------------------------------------------------------------------------------------------------
 [mysqlnd]
@@ -44,7 +44,7 @@ mysqlnd.collect_memory_statistics = Off
 mysqlnd_ms.enable=1
 mysqlnd_ms.config_file=/usr/local/php/etc/mysqlnd_ms_plugin.in
 -------------------------------------------------------------------------------------------------------------------------
-[xiongzhen@bj-mjq-9-58 ~]$ cat /usr/local/php/etc/mysqlnd_ms_plugin.ini
+[xiongzhen@127.0.0.1 ~]$ cat /usr/local/php/etc/mysqlnd_ms_plugin.ini
 {
     "wps_pay": {
         "master": {
